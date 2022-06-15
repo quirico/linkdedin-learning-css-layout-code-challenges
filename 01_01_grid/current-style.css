@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 0 auto;
+  width: clamp(calc(320px - 3rem), 75%, 70ch);
+  height: calc(75vh - 2.5rem);
+  border: 0.5rem solid black;
+
+  /* 01_01 grid solution */
+  display: grid;
+  place-items: center;
+  /* 
+  place-items sets both the align-items and justify-items 
+  properties in a single declaration, that is as if:
+  justify-items: center;
+  align-items: center;
+  */
+}
+
+.child {
+  padding: 0 2rem;
+  width: 50%;
+  border: 0.5rem solid red;
+}
